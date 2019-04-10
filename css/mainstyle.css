@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+
+body{
+	font-family: 'Titillium Web', Sans-serif;
+}
+
+nav ul{
+	padding: 0;
+}
+nav li{
+	display: inline-block;
+	list-style-type: none;
+}
