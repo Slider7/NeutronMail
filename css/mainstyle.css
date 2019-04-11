@@ -10,6 +10,11 @@ header{
 h2{
 	margin: 0;
 }
+.logo{
+	font-size: 30pt;
+	color: rgba(133, 134, 136, 255);
+}
+
 nav ul{
 	padding: 0;
 }
@@ -20,4 +25,35 @@ nav li{
 
 .features-row{
 	display: flex;
+}
+
+.feat-main-title{
+  font-size: 60pt;
+  color: rgba(83, 83, 83, 255);
+  text-align: left;
+}
+.feat-main-info{
+	font-size: 24pt;
+	color: rgba(149, 147, 147, 255);
+	text-align: left;
+}
+
+.reviews{
+	background: url('../assets/images/grey-piece-bkg.png');	
+}
+.review-text{
+	font-family: ﻿MalagaOTCE-RegItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+	font-size: 24pt;
+	color: rgba(16, 16, 16, 255);
+	text-align: right;
+}
+.download-title{
+	font-size: 36pt;
+  color: rgba(83, 83, 83, 255);
+  text-align: left;
+}
+.download-text{
+	font-size: 16pt;
+  color: rgba(149, 147, 147, 255);
+  text-align: left;
 }
