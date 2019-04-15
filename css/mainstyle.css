@@ -2,27 +2,85 @@
 
 body{
 	font-family: 'Titillium Web', Sans-serif;
+	width: 1800px;
 }
 header{
 	height: 800px;
+	width: 100%;
 	background: url('../assets/images/header-background.jpg');
 }
-h2{
-	margin: 0;
+/*-----------------------------------NAV---------------------------------------*/
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 78px 200px;
 }
-.logo{
-	font-size: 30pt;
-	color: rgba(133, 134, 136, 255);
-}
-
 nav ul{
 	padding: 0;
-}
+	display: inline-block;
+} 
 nav li{
 	display: inline-block;
 	list-style-type: none;
 }
+.logo{
+	color: rgba(133, 134, 136, 255);
+}
+h2{
+	margin: 0;
+	font-size: 30px;
+}
+.blue-mail{
+	color: #5b4295;
+}
+.lang-list{
+	font-size: 14px;
+	margin-top: 20px;
+	color: rgba(133, 134, 136, 255);
+}
+.lang-list > li{
+	margin-right: 9px;
+	margin-left: 8px;
+}
+.lang-list > li:first-child{
+	margin-left: 0;
+	font-weight: bold;
+	letter-spacing: 0.05ch;
+}
+.nav-links{
+	margin-top: 6px;
+}
+.nav-links > li{
+	font-size: 16px;
+	margin: 0 10px;
+	letter-spacing: 0.055ch;
+}
 
+.link-login{
+	margin-left: 40px;
+	font-weight: bold;
+}
+.sign-up-link{
+/*	height: 42px;
+	width: 96px;*/
+	padding: 6px 20px 8px 20px;
+	border-radius: 22px;
+	color: white;
+	font-weight: bold; 
+	text-decoration: none;
+	background-image: 
+	  /*linear-gradient(#582c7e),*/
+		linear-gradient(150deg, #582c7e 0%, #5c499d 45%, #637ad1 90%, #637ad1 100%);
+	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+}
+.sign-up-link:hover{
+	text-decoration: none;
+}
+
+
+/*-----------------------------------MAIN-FEATURES---------------------------------------*/
 .features-row{
 	display: flex;
 }
@@ -42,7 +100,7 @@ nav li{
 	background: url('../assets/images/grey-piece-bkg.png');	
 }
 .review-text{
-	font-family: ﻿MalagaOTCE-RegItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+	font-family: MalagaOTCE-RegItalic, AdobeInvisFont, MyriadPro-Regular;
 	font-size: 24pt;
 	color: rgba(16, 16, 16, 255);
 	text-align: right;
