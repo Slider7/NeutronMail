@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,500,700');
+
+:root {
+  --social-width: 54px; 
+}
 
 body{
 	font-family: 'Titillium Web', Sans-serif;
@@ -50,21 +54,41 @@ h2{
 	letter-spacing: 0.05ch;
 }
 .nav-links{
-	margin-top: 6px;
+	margin-top: 9px;
+	margin-right: 0px;
 }
 .nav-links > li{
 	font-size: 16px;
 	margin: 0 10px;
 	letter-spacing: 0.055ch;
 }
+.nav-links a{
+	text-decoration: none;
+	color: #5b4295;
+}
+.nav-links a:hover{
+	-webkit-text-stroke: 1px #5b4295;
+}
 
-.link-login{
-	margin-left: 40px;
+.nav-links > .link-login{
+	margin-left: 60px;
+	margin-right: 8px;
 	font-weight: bold;
 }
-.sign-up-link{
-/*	height: 42px;
-	width: 96px;*/
+.nav-links > .link-login > .fa{
+	color: #5b4295;
+}
+
+.link-login > .log-in-link{
+	color: #454545;
+	margin: 0;
+	margin-left: 2px;
+	text-decoration: none;
+}
+.nav-links > .link-signup{
+	margin-right: 0px;
+}
+#sign-up-link{
 	padding: 6px 20px 8px 20px;
 	border-radius: 22px;
 	color: white;
@@ -74,12 +98,122 @@ h2{
 	  /*linear-gradient(#582c7e),*/
 		linear-gradient(150deg, #582c7e 0%, #5c499d 45%, #637ad1 90%, #637ad1 100%);
 	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+	margin-right: 0px;
 }
-.sign-up-link:hover{
+.link-signup > #sign-up-link:hover{
 	text-decoration: none;
+	color: yellow;
+	-webkit-text-stroke: 0px white;
+	box-shadow: 3px 3px 12px 3px #5c499d;
+}
+.log-in-link:hover{
+	color: #5b4295;
+}
+/*---------------------------------------header-content-----------------------------------*/
+.header-content{
+	display: flex;
+	flex-direction: column;
+	margin-top: 68px;
+}
+.app-title, .app-subtitle, .create-acc{
+	display: block;
+	text-align: center;
+}
+.title-container{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+}
+.titles{
+	width: calc( 100% - var(--social-width) );
+}
+.titles h1{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 45pt; 
+	color: #7a7a7a;
+	margin-left: 55px;
+	letter-spacing: 0.005ch;
+}
+.titles h2{
+	font-size: 27pt; 
+	font-weight: 500;
+	color: #7a7a7a;
+	padding-left: 54px;
+	letter-spacing: 0.01ch;
+}
+.titles .somewhere{
+	color: #fc6b6d;
+}
+.social-icons{
+	display: flex;
+	flex-direction: column;
+	width: var(--social-width);
+	padding-top: 6px;
+}
+.social-icons i{
+	font-size: 22px;
+	font-weight: 300;
+	margin: 8px 0;
+	color: #676766;
+}
+.social-icons i:hover{
+	color: #5b4295;
 }
 
+.titles{
+	display: flex;
+	flex-direction: column;
+}
 
+.create-acc{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 74px;
+}
+.create-acc{
+	background-image:url('../assets/images/blue-shadow-center.png');
+	background-position: center 21px;
+	background-size: 30%;
+	background-repeat: no-repeat;
+}
+#btn-create-acc{
+	padding: 18px 62px 18px 62px;
+	border-radius: 31px;
+	color: white;
+	font-weight: 700; 
+	font-size: 18px;
+	letter-spacing: 0.025ch;
+	background-image: 
+		linear-gradient(90deg, #646c93 0%, #5f2e69 100%);
+  margin-right: 26px;
+	border: none;
+}
+
+.btn-round{
+	width: 46;
+	height: 46;
+	padding: 10px 12px 10px 12px;
+	border-radius: 50%;
+	color: white;
+	font-size: 22px;
+	background-image: 
+		linear-gradient(90deg, #646c93 0%, #5f2e69 100%);
+	margin-right: 22px;
+	border: none;
+}
+
+.btn-app-store i{
+	display: inline-block;
+	width: 22px;
+}
+
+.btn-playmarket{
+	margin-right: 0;
+}
 /*-----------------------------------MAIN-FEATURES---------------------------------------*/
 .features-row{
 	display: flex;
