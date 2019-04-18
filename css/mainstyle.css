@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,500,600,700');
 
+@font-face {
+	font-family: "Malaga OT Reg";
+	src: url('../assets/fonts/MalagaOT-RegItalic.otf') format("opentype");
+}
+
 :root {
   --social-width: 54px; 
 }
@@ -381,22 +386,190 @@ h2{
   color: #f65151;
 }
 /*--------------------------------------------reviews---------------------------------------------*/
-.reviews{
+.testimonials{
 	background: url('../assets/images/grey-piece-bkg.png');	
+	background-position-y: 237px;
+	height: 1100px;
+	width: 100%;
+	padding-top: 24px;
+}
+.news-logo:hover{
+  box-shadow: 0px 0px 10px 3px darkslateblue;
+}
+.reviews-logo{
+	padding-left: 15px;
+}
+.reviews-logo > :nth-child(3){
+	margin-left: 31px;
+}
+.reviews-logo > :nth-child(4){
+	margin-left: 42px;
+}
+.reviews-logo > :nth-child(5){
+	margin-left: 21px;
+}
+.reviews-logo > :nth-child(6){
+	margin-left: 36px;
+}
+.reviews-logo a{
+	margin: 20px;
 }
 .review-text{
-	font-family: MalagaOTCE-RegItalic, AdobeInvisFont, MyriadPro-Regular;
-	font-size: 24pt;
-	color: rgba(16, 16, 16, 255);
+	width: 950px;
+	margin-top: 59px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 108px; 
+}
+.slider-review{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-right: 23px; 
+	width: 590px;
+}
+.slider-review > ul{
+	list-style-type: none;
+	margin: 13px 18px 0px 27px;
+	padding: 0;
+}
+.slider-review > ul > li{
+	margin-bottom: 5px; 
+}
+.slider-review i:hover{
+	color: #5b4295;
+}
+.slider-review > ul i{
+	font-size: 8pt;
+	color: #b7b7b7;
+}
+.slider-review .i-selected{
+	font-size: 13px;
+	color: #101010;
+}
+
+.slider-review > p{
+	font-size: 18pt;
+	letter-spacing: 0.015ch;
+	line-height: 1.3em;
+	font-family: 'Malaga OT Reg', serif;
+	margin: 10px 0px 0px 10px;
+}
+.slider-review span{
+	font-size: 12pt;
+	margin-left: -2px; 
+}
+/*-----------------------------------------download---------------------------------*/
+.notebook-bkg{
+	background: url('../assets/images/notebook.png');	
+	background-repeat: no-repeat;
+	background-position-x: 78%;
+	background-position-y: 97px;
+}
+.download{
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: flex-end;
+	width: 1108px;
+	padding: 0;
+}
+.download > div{
+	width: 440px;
 	text-align: right;
+	height: 400px;
 }
 .download-title{
-	font-size: 36pt;
-  color: rgba(83, 83, 83, 255);
-  text-align: left;
+	color: #535353;
+	font-weight: 500;
+	font-size: 36px;
+	letter-spacing: 0.01ch;
+	margin: 0;
 }
 .download-text{
-	font-size: 16pt;
-  color: rgba(149, 147, 147, 255);
-  text-align: left;
+	color: rgba(149, 147, 147, 255);
+	margin-top: 17px;
+	margin-bottom: 31px;
+	padding-right: 6px; 
+	letter-spacing: 0.015ch;
+	line-height: 1.37em;
+}
+.appstore-btn{
+	margin-right: 9px;
+}
+.dnl-img:hover{
+	opacity: 1;
+	-webkit-animation: flash 1s;
+	animation: flash 1s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.donate{
+	margin-top: 42px;
+	height: 210px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.donate h2{
+	color: #535353;
+	font-weight: 500;
+	font-size: 36px;
+	letter-spacing: 0.01ch;
+	margin: 0;
+}
+.donate h3{
+	font-size: 22pt;
+	font-weight: 500;
+	color: rgba(149, 147, 147, 255);
+	letter-spacing: 0.0045ch;
+	margin-top: 2px;
+	margin-bottom: 40px;
+}
+#btn-upgrade{
+	padding: 17px 24px 20px 23px;
+	border-radius: 31px;
+	color: white;
+	font-weight: 700; 
+	font-size: 18px;
+	letter-spacing: 0.025ch;
+	background-image: 
+		linear-gradient(90deg, #646c93 0%, #5f2e69 100%);
+	margin-right: 47px;
+	border: none;
+	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+}
+#btn-upgrade i, #btn-donate i {
+	font-size: 16px;
+}
+#btn-donate{
+	padding: 17px 45px 20px 44px;
+	border-radius: 31px;
+	color: white;
+	font-weight: 700; 
+	font-size: 18px;
+	letter-spacing: 0.025ch;
+	background-image: 
+		linear-gradient(90deg, #35bbe0 0%, #5e7bea 100%);
+	border: none;
+	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+	margin-left: 4px;
 }
