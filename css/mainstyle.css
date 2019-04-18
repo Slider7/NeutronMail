@@ -545,7 +545,7 @@ h2{
 	margin-bottom: 40px;
 }
 #btn-upgrade{
-	padding: 17px 24px 20px 23px;
+	padding: 17px 26px 20px 25px;
 	border-radius: 31px;
 	color: white;
 	font-weight: 700; 
@@ -555,7 +555,7 @@ h2{
 		linear-gradient(90deg, #646c93 0%, #5f2e69 100%);
 	margin-right: 47px;
 	border: none;
-	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+	box-shadow: 0px 5px 15px 2px #646c93;
 }
 #btn-upgrade i, #btn-donate i {
 	font-size: 16px;
@@ -570,6 +570,62 @@ h2{
 	background-image: 
 		linear-gradient(90deg, #35bbe0 0%, #5e7bea 100%);
 	border: none;
-	box-shadow: 1px 4px 12px 3px rgba(149,162,208, 100%);
+	box-shadow: 0px 5px 15px 2px #35bbe0;
 	margin-left: 4px;
 }
+
+/*----------------------------------footer------------------------------------*/
+footer{
+	display: grid;
+	width: 1476px;
+	margin: 0px;
+	margin-top: -32px;
+	grid-gap: 10px;
+	grid-template-columns: 197px 2fr 1fr 1fr 1fr;
+	color: #555555;
+	font-size: 14px;
+	letter-spacing: 0.02ch;
+}
+.sponsors{
+	grid-column: 2 / span 4;
+	grid-row: 1;
+	justify-self: end;
+	margin-right: 30px;
+	padding-right: 7px;
+}
+.sponsors p{
+	text-align: end;
+	margin-right: 61px;
+	margin-top: 28px;
+	margin-bottom: 0;
+}
+.contacts{
+	grid-column: 2;
+	grid-row: 2;
+}
+.company{
+	grid-column: 3;
+	grid-row: 2;
+  justify-self: end;
+	width: 200px;
+}
+.legal{
+	grid-column: 4;
+	grid-row: 2;
+	justify-self: end;
+	width: 200px;
+}
+.NeutronMail{
+	grid-column: 5;
+	grid-row: 2;
+	justify-self: end;
+	width: 200px;
+}
+.copyright{
+	grid-column: 1 / span 3;
+	grid-row: 3;
+}
+.copyright ul > li{
+	display: inline-block;
+	list-style-type: none;
+} 
