@@ -12,11 +12,13 @@
 body{
 	font-family: 'Titillium Web', Sans-serif;
 	width: 1800px;
+	margin: 0 auto;
 }
 header{
 	height: 800px;
 	width: 100%;
 	background: url('../assets/images/header-background.jpg');
+	background-repeat: no-repeat;
 }
 /*-----------------------------------NAV---------------------------------------*/
 nav{
@@ -26,6 +28,16 @@ nav{
 	justify-content: space-between;
 	padding: 78px 200px;
 }
+nav label i{
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #252525;
+  padding: 10px;
+}
+nav label, #hamburger {
+  display: none;
+}
+
 nav ul{
 	padding: 0;
 	display: inline-block;
@@ -269,23 +281,33 @@ h2{
 	position: relative;
 }
 .feature1{
+	position: relative;
 	grid-area: feat1;
 	grid-column: 2;
 	grid-row: 1;
 	width: 360px;
 }
-.feature1::after{
-  display: inline-block;
+.feature1::after, .feature2::after, .feature3::after, .feat-main::before, .donate::before, .donate::after,
+footer::after, footer::before, .contacts::after, .company::after {
+	display: inline-block;
   content: "";
   border-left: 1px solid #b9b9b9;  
 	margin: 0;
-	width: 0;
 	position: absolute;
-	left: 714px;
-	top: 788px;
+}
+.feature3::after, .feat-main::before, .donate::before, .donate::after, footer::before{
+	border-top: 1px solid #b9b9b9;
+	border-left: none;
+}
+
+.feature1::after{
+  width: 0;
+  left: 392px;
+  top: -125px;
   height: 207px;
 }
 .feature2{
+	position: relative;
 	grid-area: feat2;
 	grid-column: 3;
 	grid-row: 1;
@@ -293,33 +315,25 @@ h2{
 	margin-left: -10px;
 }
 .feature2::after{
-  display: inline-block;
-  content: "";
-  border-left: 1px solid #b9b9b9;  
-	margin: 0;
-	width: 0;
-	position: absolute;
-	left: 1146px;
-	top: 917px;
+  width: 0;
+	left: 390px;
+	top: 3px;
   height: 433px;
 }
 .feature3{
+	position: relative;
 	grid-area: feat3;
 	grid-column: 4;
 	grid-row: 1 / span 2;
 } 
 .feature3::after{
-  display: inline-block;
-  content: "";
-  border-top: 1px solid #b9b9b9;  
-	margin: 0;
-	height: 0;
-	position: absolute;
-	left: 1610px;
-	top: 917px;
+ 	height: 0;
+	left: 415px;
+	top: 5px;
   width: 190px;
 }
 .feat-main{
+	position: relative;
 	grid-area: feat-main;
 	grid-column: 2 / span 2;
 	grid-row: 2;
@@ -334,8 +348,8 @@ h2{
 	height: 42px;
 	width: 295px;
 	position: absolute;
-	left: 973px;
-	top: 1351px;
+	left: -221px;
+	top: 437px;
 	font-size: 16px; 
 	display:inline-block;
 	letter-spacing: 0.035ch;
@@ -350,14 +364,9 @@ h2{
 }
 
 .feat-main::before{
-  display: inline-block;
-  content: "";
-  border-top: 1px solid #b9b9b9;  
-	margin: 0;
 	height: 0;
-	position: absolute;
-	left: 0px;
-	top: 1381px;
+	left: -322px;
+	top: 182px;
   width: 973px;
 }
 
@@ -394,6 +403,7 @@ h2{
 /*--------------------------------------------reviews---------------------------------------------*/
 .testimonials{
 	background: url('../assets/images/grey-piece-bkg.png');	
+	background-repeat: no-repeat;
 	background-position-y: 237px;
 	height: 1100px;
 	width: 100%;
@@ -529,6 +539,7 @@ h2{
 	}
 }
 .donate{
+	position: relative;
 	margin-top: 42px;
 	height: 210px;
 	display: flex;
@@ -537,26 +548,16 @@ h2{
 	align-items: center;
 }
 .donate::before{
-  display: inline-block;
-  content: "";
-  border-top: 1px solid #b9b9b9;  
-	margin: 0;
 	height: 0;
-	position: absolute;
 	left: 400px;
-	top: 2211px;
+	top: -72px;
 	width: 895px;
 	z-index: 1;
 }
 .donate::after{
-  display: inline-block;
-  content: "";
-  border-top: 1px solid #b9b9b9;  
-	margin: 0;
-	height: 0;
-	position: absolute;
+  height: 0;
 	left: 1347px;
-	top: 2211px;
+	top: -72px;
 	width: 452px;
 	z-index: 1;
 }
@@ -622,6 +623,7 @@ h2{
 /*----------------------------------footer------------------------------------*/
 footer{
 	display: grid;
+	position: relative;
 	width: 1400px;
 	margin: 0px;
 	margin-top: -32px;
@@ -632,23 +634,13 @@ footer{
 	letter-spacing: 0.02ch;
 }
 footer::after{
-	display: inline-block;
-  content: "";
-  border-left: 1px solid #b9b9b9;  
-	margin: 0;
-	position: absolute;
-	left: 1399px;
-	top: 2539px;
+	left: 1400px;
+	top: 7px;
 	height: 440px;
 }
 footer::before{
-	display: inline-block;
-  content: "";
-  border-top: 1px solid #b9b9b9;  
-	margin: 0;
-	position: absolute;
 	left: 0px;
-	top: 2538px;
+	top: 7px;
 	width: 1400px;
 }
 
@@ -722,11 +714,17 @@ footer ul a:hover{
 	-webkit-text-stroke: 1px #5b4295;
 }
 .contacts{
+	position: relative;
 	grid-column: 2;
 	grid-row: 2;
 	height: 235px;
 	padding-top: 5px;
 	padding-left: 22px; 
+}
+.contacts::after{
+	left: 2px;
+	top: 12px;
+	height: 131px;
 }
 .contacts > ul{
 	list-style-type: none;
@@ -741,19 +739,15 @@ footer ul a:hover{
   font-weight: 700;
 }
 .company{
+	position: relative;
 	grid-column: 3;
 	grid-row: 2;
   justify-self: end;
 	width: 240px;
 }
 .company::after{
-	display: inline-block;
-  content: "";
-  border-left: 1px solid #b9b9b9;  
-	margin: 0;
-	position: absolute;
-	left: 946px;
-	top: 2825px;
+  left: 267px;
+	top: 9px;
 	height: 315px;
 }
 .legal{

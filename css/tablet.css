@@ -1,0 +1,124 @@
+/*-----------------RESIZE FROM 1400 AND TABLET RESOLUTION----------------*/
+@media screen and (max-width: 1399px) and (min-width: 768px) { 
+  html>body{
+	font-family: 'Titillium Web', Sans-serif;
+	width: 100%;
+  }
+  header{
+  	height: 700px;
+  	background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+  }
+  nav{
+	  padding: 20px 20px;
+  }
+  .lang-list{
+	  margin-right: 120px;
+  }
+  .lang-list > li{
+	  font-size: 12px;
+	  margin-bottom: 10px;
+  }
+  .li-separator{
+  	display: none;
+  }
+	nav .nav-links > li{
+		font-size: 16px;
+		margin: 14px 10px;
+	}
+	nav .nav-links > .link-login{
+		margin-left: 10px;
+		margin-right: 8px;
+	}
+	
+  .feature1::after, .feature2::after, .feature3::after, .feat-main::before, .donate::before, .donate::after,
+  footer::after, footer::before, .contacts::after, .company::after {
+	  display: none 
+  }
+
+  .features{
+		display: grid;
+		margin: 40px auto;
+		grid-gap: 3%;
+		grid-template-columns: 10% 25% 25% 25% 10%;
+	}
+	.feature1{ width: 100% }
+	.feature2{ width: 100% }
+	.feature3{ width: 100% }
+	.feat-main{ width: 100% }
+	.feat-main-title{
+		font-size: 36pt;
+	}
+	.feat-main > .feat-main-info{
+		font-size: 14pt;
+	}
+  .feat-more-btn{
+  	position: static;
+  	grid-row: 3;
+  	grid-column: 3 / span 2;
+  	justify-self: right; 
+  }
+	.review-text{
+		width: 50%;
+		margin-top: 40px;
+		margin-bottom: 100px; 
+	}
+	.slider-review > p{
+		font-size: 15pt;
+		font-family: 'Malaga OT Reg', serif;
+		margin: 10px 0px 0px 10px;
+	}
+	.download{
+		width: 55%;
+		justify-content: center;
+	}
+	.download > div{
+		width: 90%;
+		text-align: center;
+		height: 400px;
+	}
+	.download-title{
+		font-size: 32px;
+	}
+	.donate{
+		margin-top: 75px;
+		height: 180px;
+	}
+	.donate h2{
+		font-size: 32px;
+	}
+	.donate h3{
+		font-size: 18pt;
+		margin-bottom: 40px;
+	}
+
+	footer{
+		width: 100%;
+		margin: 0px;
+		margin-top: 30px;
+		grid-gap: 1px;
+		grid-template-columns: 6% 40% 18% 18% 18%;
+	}
+	.sponsors{
+		grid-column: 1 / span 5;
+		grid-row: 1;
+		justify-self: center;
+		height: 285px;
+	}
+	.sponsors p{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.sponsors .sponsors-logo{
+		margin: 0;
+		margin-top: 16px;
+	}
+	.sponsors .sponsors-group{
+		padding: 0 5px;
+		margin: 0 5px;
+		text-align: center;
+	}
+	[dir="rtl"] > li a{
+		font-size: 11px; 
+	}
+}

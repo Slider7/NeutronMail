@@ -1,0 +1,245 @@
+/*-----------------RESIZE FROM 767px and SMALL SCREENS-----------------*/
+@media screen and (max-width: 767px) {
+  /* [SHOW HAMBURGER] */
+  nav label {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+  header{
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  .header-content{
+    margin-top: 92px;
+  }
+  
+  /* [BREAK DOWN MENU INTO VERTICAL] */
+  nav ul li {
+    display: block;
+  }
+  nav .lang-list > li a, nav .nav-links > li a{
+    color: #252525;
+  }
+  .nav-links > li {
+    border-top: 1px solid #333;
+  }
+  nav .link-signup{
+  	border: none;
+  }
+  nav{
+  	position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    background: rgb(220,220,220);
+  }
+
+  /* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+  nav ul {
+    display: none;
+  }
+  nav input:checked ~ ul {
+    display: block;
+  }
+  nav .lang-list {
+    display: block;
+  }
+
+  html>body{
+	  font-family: 'Titillium Web', Sans-serif;
+	  width: 100%;
+  }
+  nav{
+	  padding: 10px 10px;
+  }
+  .lang-list{
+	  margin: 10px 5px 10px 0;
+  }
+  .lang-list > li{
+	  font-size: 12px;
+	  margin: 0 3px;
+	  display: inline-block;
+  }
+  .li-separator{
+  	display: none;
+  }
+  nav .nav-links{
+  	margin-right: 20px;
+  }
+	nav .nav-links > li{
+		font-size: 14px;
+		margin: 8px 8px;
+		padding-top: 8px;
+	}
+	nav .nav-links > .link-login, nav .nav-links > .link-signup{
+		font-size: 14px;
+		margin: 10px 10px;
+	}
+  
+  .title-container{
+  	flex-direction: column;
+  	align-items: center;
+  }
+  .social-icons{
+  	flex-direction: row;
+  	justify-content: space-around;
+  	width: 100px;
+  }
+	.titles .app-title{
+		font-size: 32px;
+		margin: 10px; 
+	}
+	.titles .app-subtitle{
+		font-size: 22px;
+		margin: 8px; 
+	}
+  
+  .feature1::after, .feature2::after, .feature3::after, .feat-main::before, .donate::before, .donate::after,
+  footer::after, footer::before, .contacts::after, .company::after {
+	  display: none 
+  }
+
+  .features{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-main {order: 1; width: 100%; margin: 10px; margin-top: 50px;}
+  .feature1 { order: 2; width: 100%; margin: 10px;}
+  .feature2 { order: 3; width: 100%; margin: 10px;}
+  .feature3 { order: 4; width: 100%; margin: 10px;}
+  
+  .feat-main-title{
+    font-size: 28pt;
+  }
+  .feat-main > .feat-main-info{
+    font-size: 14pt;
+  }
+  .feat-more-btn{
+    display: none; 
+  }
+
+  .review-text, .reviews-logo{
+    display: none;
+  }
+
+  .testimonials {
+    background: url(../assets/images/grey-piece-bkg.png);
+    background-repeat: no-repeat;
+    background-position-y: 237px;
+    width: 100%;
+    padding-top: 0;
+    height: auto;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;  
+  }
+  .notebook-bkg{
+    background: white;
+  }
+  .download{
+    border-top: 1px solid grey;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .download > div{
+    width: 100%;
+    text-align: center;
+    height: 350px;
+  }
+  .download-title{
+    color: #535353;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+  }
+  .download-text{
+    color: rgba(149, 147, 147, 255);
+    margin-top: 17px;
+    margin-bottom: 31px;
+    padding: 8px;
+    line-height: 1.37em;
+  }
+
+  .donate{
+    padding-top: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .donate h2{
+    font-size: 32px;
+  }
+  .donate h3{
+    font-size: 18pt;
+    margin-bottom: 20px;
+  }
+  #btn-donate, #btn-upgrade{
+    padding: 15px 15px;
+    margin: 10px; 
+  }
+  
+  footer{
+    width: 100%;
+    margin: 0px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sponsors{
+    justify-self: center;
+    height: auto;
+  }
+  .sponsors p{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sponsors .sponsors-group{
+    padding: 0 5px;
+    margin: 0 5px;
+    text-align: center;
+  }
+  .sponsors-group a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  [dir="rtl"] > li a{
+    font-size: 11px; 
+  }
+ .company, .legal, .NeutronMail{
+    display: none;
+  }
+  .contacts{
+    margin: 20px 0 10px 0;
+    padding: 0;
+    text-align: center; 
+    height: auto;
+  }
+
+  .copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .copyright p{
+    margin: 5px;
+    text-align: center;
+  }
+  .copyright ul > li{
+    display: inline-block;
+    list-style-type: square;
+    margin: 7px 5px;
+  }
+  .copyright ul > li span{
+    display: none;
+  }
+}
